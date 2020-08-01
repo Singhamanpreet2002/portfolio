@@ -31,17 +31,16 @@ tl.from(".logo", {
 // About section
 let About = gsap.timeline({
   defaults: {
-    duration: 0.9,
+    duration: 0.5,
   },
   scrollTrigger: {
     trigger: ".container",
     start: "top top",
-    end: "+=500",
-    pin: true,
+    end: "+=100",
 
 
   },
-})
+}, )
 About.from(
     "#anim2", {
       x: 100,
@@ -79,14 +78,14 @@ About.from(
 // tools section
 let Tools = gsap.timeline({
   defaults: {
-    duration: 1,
+    duration: 0.5,
   },
   scrollTrigger: {
     trigger: ".container1",
 
     start: "top top",
     end: "+=500",
-    pin: true,
+
 
 
   },
@@ -108,7 +107,7 @@ Tools.from(
       },
 
     },
-    "-=1.5"
+
   )
   .from(
     ".heading", {
@@ -126,20 +125,20 @@ Tools.from(
 
 
     },
-    "-=1.5"
+
   );
 
 
 // projects sec
 let Project = gsap.timeline({
   defaults: {
-    duration: 1,
+    duration: 0.5,
   },
   scrollTrigger: {
     trigger: ".container2",
     start: "top top",
     end: "+=500",
-    pin: true,
+
 
 
   },
@@ -163,12 +162,12 @@ Project.from(
   )
   .from(
     ".pro-items", {
-      x: -80,
+      x: -40,
       opacity: 0,
       ease: "back.in(0.7)",
       delay: "1",
       stagger: {
-        amount: 1,
+        amount: 0.5,
       },
 
     },
