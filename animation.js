@@ -1,32 +1,36 @@
 var tl = gsap.timeline({
   defaults: {
-    duration: 0.9
-  }
+    duration: 0.9,
+  },
 });
 //landing Page
 tl.from(".logo", {
-    y: -500,
-    opacity: 0
-  })
+  y: -500,
+  opacity: 0,
+})
   .from(
-    ".anim1", {
+    ".anim1",
+    {
       y: -100,
       opacity: 0,
       stagger: 0.6,
-      ease: "back.out(1.7)"
+      ease: "back.out(1.7)",
     },
     "-=.1"
   )
-  .from(".resume-bt", {
-    x: 100,
-    opacity: 0,
-    ease: "back.in(.7)"
-  }, "-=1.2")
+  .from(
+    ".resume-bt",
+    {
+      x: 100,
+      opacity: 0,
+      ease: "back.in(.7)",
+    },
+    "-=1.2"
+  )
   .from(".nav-anim", {
     opacity: 0,
-    ease: "power3"
-  })
-
+    ease: "power3",
+  });
 
 // About section
 let About = gsap.timeline({
@@ -35,45 +39,37 @@ let About = gsap.timeline({
   },
   scrollTrigger: {
     trigger: ".container",
-    start: "top top",
-    end: "+=100",
-
-
   },
-}, )
-About.from(
-    "#anim2", {
-      x: 100,
-      easing: "power3",
-      opacity: 0,
-    },
-  )
+});
+About.from("#anim2", {
+  x: 100,
+  easing: "power3",
+  opacity: 0,
+})
   .from(
-    ".icons", {
+    ".icons",
+    {
       x: -80,
       opacity: 0,
       ease: "back.in(0.7)",
       stagger: {
         amount: 1,
       },
-
     },
     "-=0.5"
   )
   .from(
-    ".head, .para", {
+    ".head, .para",
+    {
       x: 80,
       opacity: 0,
       ease: "back.in(0.7)",
       stagger: {
         amount: 1,
       },
-
     },
     "-=1.5"
   );
-
-
 
 // tools section
 let Tools = gsap.timeline({
@@ -82,52 +78,35 @@ let Tools = gsap.timeline({
   },
   scrollTrigger: {
     trigger: ".container1",
-
-    start: "top top",
-    end: "+=500",
-
-
-
   },
+});
+Tools.from("#anim3", {
+  y: 100,
+  easing: "power3",
+  opacity: 0,
 })
-Tools.from(
-    "#anim3", {
-      y: 100,
-      easing: "power3",
-      opacity: 0,
+  .from(".project-items", {
+    x: -80,
+    opacity: 0,
+    ease: "back.in(0.7)",
+    stagger: {
+      amount: 1,
     },
-  )
+  })
   .from(
-    ".project-items", {
-      x: -80,
-      opacity: 0,
-      ease: "back.in(0.7)",
-      stagger: {
-        amount: 1,
-      },
-
-    },
-
-  )
-  .from(
-    ".heading", {
+    ".heading",
+    {
       x: 80,
       opacity: 0,
       ease: "back.in(0.7)",
     },
     "-=0.5"
   )
-  .from(
-    ".list", {
-      y: 80,
-      opacity: 0,
-      ease: "back.in(0.7)",
-
-
-    },
-
-  );
-
+  .from(".list", {
+    y: 80,
+    opacity: 0,
+    ease: "back.in(0.7)",
+  });
 
 // projects sec
 let Project = gsap.timeline({
@@ -136,32 +115,21 @@ let Project = gsap.timeline({
   },
   scrollTrigger: {
     trigger: ".container2",
-    start: "top top",
-    end: "+=500",
-
-
-
   },
+});
+Project.from("#anim4", {
+  y: 100,
+  easing: "power3",
+  opacity: 0,
 })
-Project.from(
-    "#anim4", {
-      y: 100,
-      easing: "power3",
-      opacity: 0,
-    }
-  )
+  .from(".svg-1", {
+    x: -80,
+    opacity: 0,
+    ease: "back.in(0.7)",
+  })
   .from(
-    ".svg-1", {
-      x: -80,
-      opacity: 0,
-      ease: "back.in(0.7)",
-
-
-    },
-
-  )
-  .from(
-    ".pro-items", {
+    ".pro-items",
+    {
       x: -40,
       opacity: 0,
       ease: "back.in(0.7)",
@@ -169,7 +137,6 @@ Project.from(
       stagger: {
         amount: 0.5,
       },
-
     },
     "-=1.5"
   );
@@ -181,14 +148,13 @@ let foot = gsap.timeline({
   },
   scrollTrigger: {
     trigger: ".contact",
-
   },
-})
+});
 
-
-foot.from(
-    ".img", {
-
+foot
+  .from(
+    ".img",
+    {
       opacity: 0,
       ease: "back.in(0.7)",
       delay: "1",
@@ -198,9 +164,7 @@ foot.from(
     },
     "-=1.5"
   )
-  .from(
-    ".foot-text", {
-      easing: "power3",
-      opacity: 0,
-    }
-  );
+  .from(".foot-text", {
+    easing: "power3",
+    opacity: 0,
+  });
