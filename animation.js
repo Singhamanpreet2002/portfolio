@@ -5,12 +5,11 @@ var tl = gsap.timeline({
 });
 //landing Page
 tl.from(".logo", {
-  y: -500,
-  opacity: 0,
-})
+    y: -500,
+    opacity: 0,
+  })
   .from(
-    ".anim1",
-    {
+    ".anim1", {
       y: -100,
       opacity: 0,
       stagger: 0.6,
@@ -19,8 +18,7 @@ tl.from(".logo", {
     "-=.1"
   )
   .from(
-    ".resume-bt",
-    {
+    ".resume-bt", {
       x: 100,
       opacity: 0,
       ease: "back.in(.7)",
@@ -42,13 +40,12 @@ let About = gsap.timeline({
   },
 });
 About.from("#anim2", {
-  x: 100,
-  easing: "power3",
-  opacity: 0,
-})
+    x: 100,
+    easing: "power3",
+    opacity: 0,
+  })
   .from(
-    ".icons",
-    {
+    ".icons", {
       x: -80,
       opacity: 0,
       ease: "back.in(0.7)",
@@ -59,8 +56,7 @@ About.from("#anim2", {
     "-=0.5"
   )
   .from(
-    ".head, .para",
-    {
+    ".head, .para", {
       x: 80,
       opacity: 0,
       ease: "back.in(0.7)",
@@ -81,10 +77,10 @@ let Tools = gsap.timeline({
   },
 });
 Tools.from("#anim3", {
-  y: 100,
-  easing: "power3",
-  opacity: 0,
-})
+    y: 100,
+    easing: "power3",
+    opacity: 0,
+  })
   .from(".project-items", {
     x: -80,
     opacity: 0,
@@ -94,8 +90,7 @@ Tools.from("#anim3", {
     },
   })
   .from(
-    ".heading",
-    {
+    ".heading", {
       x: 80,
       opacity: 0,
       ease: "back.in(0.7)",
@@ -118,18 +113,17 @@ let Project = gsap.timeline({
   },
 });
 Project.from("#anim4", {
-  y: 100,
-  easing: "power3",
-  opacity: 0,
-})
+    y: 100,
+    easing: "power3",
+    opacity: 0,
+  })
   .from(".svg-1", {
     x: -80,
     opacity: 0,
     ease: "back.in(0.7)",
   })
   .from(
-    ".pro-items",
-    {
+    ".pro-items", {
       x: -40,
       opacity: 0,
       ease: "back.in(0.7)",
@@ -153,11 +147,10 @@ let foot = gsap.timeline({
 
 foot
   .from(
-    ".img",
-    {
+    ".img", {
       opacity: 0,
       ease: "back.in(0.7)",
-      delay: "1",
+      delay: "0.5",
       stagger: {
         amount: 1,
       },

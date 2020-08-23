@@ -36,21 +36,19 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(
-    to right bottom,
-    #08f046,
-    #00ea71,
-    #00e391,
-    #00daa8,
-    #00d0b6,
-    #18d0be,
-    #2ad0c5,
-    #3ad0cb,
-    #44dbd4,
-    #4de5de,
-    #56f0e7,
-    #5ffbf1
-  );
+  background-image: linear-gradient(to right bottom,
+      #08f046,
+      #00ea71,
+      #00e391,
+      #00daa8,
+      #00d0b6,
+      #18d0be,
+      #2ad0c5,
+      #3ad0cb,
+      #44dbd4,
+      #4de5de,
+      #56f0e7,
+      #5ffbf1);
 }
 
 Nav {
@@ -197,7 +195,7 @@ Nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 70%;
     z-index: 99;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
@@ -409,8 +407,7 @@ Nav {
   }
 }
 
-@media screen and (max-width: 768px) {
-}
+@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 380px) {
   #heading {
