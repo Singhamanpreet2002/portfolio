@@ -151,6 +151,7 @@ foot
       opacity: 0,
       ease: "back.in(0.7)",
       delay: "0.5",
+      duration: 1,
       stagger: {
         amount: 1,
       },
